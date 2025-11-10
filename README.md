@@ -1,3 +1,3 @@
-# Lab Assignment 3
-Click `Code` > `Codespaces` > `Create codespace on main` to start coding!
+# FPGA Sinusoid Generator
 
+In this lab, I designed and implemented a fixed-point sinusoid generator in SystemVerilog, gaining hands-on experience with fixed-point arithmetic and memory-based waveform synthesis. Using a 1-read/1-write asynchronous memory (ram_1r1w_async), I precomputed and stored 12-bit signed sinusoid values indexed in hexadecimal, carefully managing integer and fractional bit widths to ensure numerical accuracy. I integrated the sinusoid module with a counter module and an I2S2 interface on the FPGA to generate a 440 Hz tuning-A tone, using a 22.591 MHz PLL clock and ready-valid handshakes for both left and right audio channels. The system was successfully demonstrated by outputting the tone through speakers, verifying correct fixed-point computation, waveform generation, and audio playback.
